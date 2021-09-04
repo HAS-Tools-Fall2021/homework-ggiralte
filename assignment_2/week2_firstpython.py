@@ -28,8 +28,9 @@ data.head(6) # look at the first x rows of the data
 data.tail(6) # look at the last  x rows  of the data
 
 data.iloc[350:360] # grab any subset of rows to look at
-data.flow[350:380]  #Grab a subset of just the flow data dat look at
-data.loc['1990-01-01']  #find a specific date
+data.flow[11550:11580]  #Grab a subset of just the flow data dat look at
+data.loc['2018-09-02':'2018-09-20']  #find a specific date
+data.flow['2021-08-19':'2021-08-31'] 
 
 # %%
 # Step 5 - Make a plot of the data
