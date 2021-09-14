@@ -2,6 +2,13 @@
 ***9/12/21 \
 Assignment 3***
 
+___
+### Grade
+3/3: Great work!
+- I don't see your python script submitted here though? Make sure to include that with your submission next time. I found it in your assignment folder but I won't check there in the future.
+- Question 4 I think your logic is a bit off in your averaging -- check the answer in the solution provided. 
+_____
+
 ### Prediction Summary:
 For the week of 9/12/21 through 9/18/21, I believe that the flow will be 75 cfs because the average flow for last week (9/5 - 9/11) was 118 cfs. The current flow on 9/11/21 is 98.5 cfs. Also, since Camp Verde will not be expecting any rain this week, I believe the flow will decrease to 75 cfs.
 
