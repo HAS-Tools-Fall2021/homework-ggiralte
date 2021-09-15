@@ -128,15 +128,11 @@ print(len(ilist4))
 ilist5 = []
 
 for i in range(len(year)):
-        if year[i] == 2021 and month[i] == 9:
+        if month[i] == 9 and day[i] >= 15:
                 ilist5.append(i)
 
 subset = [flow[j] for j in ilist5]
-print(subset[:15])
-print(subset[15:])
-
-print(np.mean(subset[:15]))
-print(np.mean(subset[15:]))
+print(np.mean(subset))
 
 # %%
 # Alternatively I could have  written the for loop I used
