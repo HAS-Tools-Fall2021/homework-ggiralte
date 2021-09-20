@@ -114,6 +114,7 @@ flow_quants2 = np.quantile(flow_data, q=[0,0.1, 0.5, 0.9], axis=0)
 print('Method two flow quantiles:', flow_quants2[:,3]) 
 
 # %% 
+# Question 1: 
 # 1. Year
 # 2. Month
 # 3. Day of the month
@@ -127,7 +128,8 @@ flow_count = np.sum(combined_test) # add up all the array (note Trues = 1 and Fa
 print(flow_count)
 
 # %%
-mybins = np.linspace(0, 75, num=15)
+# Question 1: 
+mybins = np.linspace(0, 90, num=15)
 # another example using the max flow to set the upper limit for the bins
 #mybins = np.linspace(0, np.max(flow_data[:,3]), num=15) 
 
@@ -137,3 +139,19 @@ plt.title('Streamflow')
 plt.xlabel('Flow [cfs]')
 plt.ylabel('Count')
 # %%
+# Question 3:
+
+flow_count = np.sum((flow_data[:,3] > 85) & (flow_data[:,1]== 9))
+print(flow_count)
+# %%
+# Question 4:
+
+flow_count_yr = np.sum((flow_data[:,3] > 85) & (flow_data[:,1] == 9) & (flow_data[:,0] >= 2001))
+print(flow_count_yr)
+# %%
+# Question 5:
+
+first_half = np.sum((flow_data[:,3] > 85) & (flow_data[:,1] == 9) & (flow_data[:,2] <= 15))
+print(first_half)
+second_half = np.sum((flow_data[:,3] > 85) & (flow_data[:,1] == 9) & (flow_data[:,2] >= 15))
+print(second_half)
