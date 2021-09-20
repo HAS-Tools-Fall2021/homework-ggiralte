@@ -2,6 +2,14 @@
 **9/20/21** \
 **Assignment 4**
 
+_______
+## Grade: 
+**3/3**: Nice work!  Good job with the markdown formatting and I like your logic here and your plots. A few comments: 
+- It looks like you missed qeustion 2? I will give you a pass on it but make sure you check out the solution when its posted. 
+- thanks for submitting your graphs. I will show you this week how to include them in your markdown. 
+- Next time just includ ethe python script that you want me to look at in your submission folder. 
+______
+
 I believe that the flow for the week of 9/19 - 9/25 will be 90 cfs based on the fact that the flow this past week was in the higher 90s. For the week of 9/26 to 10/2 I believe that the flow will be 85 cfs because the monsoon season should be over by the end of September and there shouldn't be much rain.
 
 **Question 3:** \
