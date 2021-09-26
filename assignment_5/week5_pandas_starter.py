@@ -20,8 +20,7 @@ filepath = '../data/streamflow_week5.txt'
 # %%
 # Read the data into a pandas dataframe
 data = pd.read_table(filepath, sep = '\t', skiprows=30,
-        names =['agency_cd', 'site_no', 'datetime', 'flow', 'code']
-        )
+        names =['agency_cd', 'site_no', 'datetime', 'flow', 'code'])
 
 # Expand the dates to year month day
 data[["year", "month", "day"]] = data["datetime"].str.split("-", expand=True)
@@ -68,9 +67,9 @@ for month in data['month']:
 
 print(count)
 # %% 
+# Experimenting
 
 this_week = data[['month', 'day', 'flow']][11584:11591]
-
 data[['flow']][300:330]
 data['flow'][300:365].describe()
 data.sort_values(by='flow', ascending=False)
