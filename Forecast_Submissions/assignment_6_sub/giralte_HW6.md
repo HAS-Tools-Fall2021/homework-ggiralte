@@ -2,6 +2,11 @@
 **10/4/21** \
 **Assignment 6**
 
+____
+## Grade
+3/3: Great work! I love your plotting figure 3 is really cool. 
+___
+
 For 10/3-10/9, I predicted that the flow would be 160 because the flow for this past week got up to the 200s and since Camp Verde isn't expecting much rain (if any rain), I think the flow will drop down. For the week of 10/10-10/16, I predicted that the flow would be 115 because again, Camp Verde shouldn't be getting much rain so I believe that the flow will decrease. Also, based on my analysis of previous years, I think the flow will start to decrease overall as we move into the first couple weeks of October. 
 
 ### Graph 1:
