@@ -11,7 +11,7 @@ import random
 # Set the file name and path to where you have stored the data
 # Make sure the file has been updated for Saturday's data
 filename = 'streamflow_week7.txt'
-filepath = os.path.join('../assignment_7_sub', filename)
+filepath = os.path.join('../../data', filename)
 print(os.getcwd())
 print(filepath)
 
