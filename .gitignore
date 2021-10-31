@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+data/NHDPLUS_H_1506_HU4_GDB/
+
+data/gagesII_9322_point_shapefile/
+
+Cheat_Sheets/.DS_Store
+
+data/.DS_Store
+
+.DS_Store
