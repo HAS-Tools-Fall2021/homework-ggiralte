@@ -13,7 +13,7 @@ import os
 # USGS National Hydrography Dataset Plus High Resolution (NHDPlus HR) for 4-digit Hydrologic Unit - 1506 (published 20180813)
 
 # Open the files from my computer
-file = os.path.join('../data/NHDPLUS_H_1506_HU4_GDB', 'NHDPLUS_H_1506_HU4_GDB.gdb')
+file = os.path.join('../../data/NHDPLUS_H_1506_HU4_GDB', 'NHDPLUS_H_1506_HU4_GDB.gdb')
 fiona.listlayers(file)
 HUC6 = gpd.read_file(file, layer="WBDHU6") # Grab the layer we want
 
@@ -46,7 +46,7 @@ plt.show()
 # %%
 # Gages (same that Dr. Condon used)
 # https://water.usgs.gov/GIS/metadata/usgswrd/XML/gagesII_Sept2011.xml#stdorder 
-file2 = os.path.join("../data/gagesII_9322_point_shapefile", 'gagesII_9322_sept30_2011.shp')
+file2 = os.path.join("../../data/gagesII_9322_point_shapefile", 'gagesII_9322_sept30_2011.shp')
 gages = gpd.read_file(file2)
 
 # %%
@@ -69,12 +69,30 @@ HUC6_project = HUC6.to_crs(gages_AZ.crs)
 fig, ax = plt.subplots(figsize=(5, 5))
 gages_AZ.plot(column='DRAIN_SQKM', categorical=False,
               legend=True, markersize=25, cmap='Set1',
-              ax=ax)
-points_project.plot(ax=ax, color='black', marker='x', label="N to S, Flagstaff, Our Stream Gage, Phoenix",)
+              legend_kwds={'label': r'Drainage_SQKM'}, ax=ax)
+points_project.plot(ax=ax, color='black', marker='x', label="N to S: Flagstaff, \nOur Stream Gage, Phoenix",)
 HUC6_project.boundary.plot(ax=ax, color=None,
                            edgecolor='dimgray', linewidth=0.75, label="Watershed boundry")
 ctx.add_basemap(ax, crs=gages_AZ.crs)
 ax.legend()
+ax.set(title="Watershed for the Verde River")
 fig.savefig("Watershed")
 
+# %%
+# lat/lon map:
+gages_project = gages_AZ.to_crs(HUC6.crs)
+
+fig, ax = plt.subplots(figsize=(10, 10))
+gages_project.plot(column='DRAIN_SQKM', categorical=False,
+              legend=True, markersize=25, cmap='Set1',
+              legend_kwds={'label': r'Drainage_SQKM'}, ax=ax)
+point_df.plot(ax=ax, color='black', marker='x', label="N to S: Flagstaff, \nOur Stream Gage, Phoenix",)
+HUC6.boundary.plot(ax=ax, color=None,
+                           edgecolor='dimgray', linewidth=0.9, label="Watershed boundry")
+ctx.add_basemap(ax, crs=HUC6.crs)
+ax.legend()
+ax.set(title="Watershed for the Verde River",xlabel='latitude', ylabel='longitude')
+fig.savefig("Watershed")
+
+#type os.getcwd() into interactive window for the directory path that you're currently in
 # %%
