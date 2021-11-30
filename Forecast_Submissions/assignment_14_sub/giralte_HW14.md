@@ -1,6 +1,11 @@
 # Gigi Giralte
 **11/29/21** \
 **Assignment 14**
+___
+### Grade
+3/3: Great job!  Yours is an interesting example of when you can run the codes but because you don't know what they did or why and because the data is not well documented what you get out is actually not really usable.   I'll note that they probably didn't include cells because they were expecting you to run the scripts all at once from command line. But I agree that can make it harder to walk through at first.  Its also a very common issue that people who write codes leave out a lot of critical steps in their instructions without realizing. 
+___
+
 ### Question 1:
 What is the paper or project you picked? Include a title, a link the the paper and a 1-2 sentence summary of what its about.
 
