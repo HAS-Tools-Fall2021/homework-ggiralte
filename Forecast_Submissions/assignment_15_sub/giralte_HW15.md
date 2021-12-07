@@ -2,6 +2,9 @@
 **12/6/21** \
 **Assignment 15**
 
+### Grade:
+3/3: Great job! You actually don't need to be in interactive mode to submit a job FYI.  
+
 ### Reflection:
 1) What resources did you request on Puma? \
 When I first opened Puma, I had to enter my UA password and then I was able to type in "interactive" to be able to activate my jobs to run. From here, I typed in "sbatch run_python.sh" to get my job to run, however I wasn't in the right directory so I had to enter "ls" to get a list of my folders and then type "cd HAS_tools" to get to the right folder. From here, the "sbatch run_python.sh" worked and my job was queued and it ran!
